@@ -1,0 +1,718 @@
+*{
+    margin: 0 auto;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Calibri;
+    font-size: 24px;
+    width: auto;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .grid{
+        display:flex;
+    }
+
+  }
+
+.body{
+    width: 100%;
+}
+
+.navy{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    opacity: 0.9; 
+    align-items: center;
+}
+
+
+
+.nav-container{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(202, 202, 202);
+    padding:0.12rem; 
+}
+
+
+.caja-nav{
+    display: flex;
+    align-items: center;
+    min-width: 5%;
+}
+
+.caja-nav a{
+    text-decoration: none;
+    color: rgb(202, 202, 202); 
+}
+
+.caja-nav a:hover{
+    color:white;
+}
+
+.search-nav i{
+    font-size: 0.6em;
+    color:grey;
+}
+
+.search-nav i:hover{
+    color:white;
+}
+
+.shop-nav i{
+    font-size: 0.6em;
+    color:grey;
+}
+
+.shop-nav i:hover{
+    color:white;
+}
+
+.text-nav{
+    font-weight: 100;
+    font-size: 0.48em;
+}
+
+
+.fa-apple{
+   color: white;
+   font-size: 0.7em;
+}
+
+.apple-nav{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.iphone{
+
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 20%;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.iphone-title{
+    color: white;
+    font-size: 2.6em;
+    font-weight:bold;
+}
+
+
+.iphone{
+ 
+    justify-content: center;
+}
+
+.muchotexto{
+    margin:0 auto;
+    padding-top: 40px; 
+}
+
+.muchotexto1{
+    margin:0 auto;
+    padding: 10px; 
+}
+
+.iphone-subtitle{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.foto{
+    padding-top: 40px;
+}
+
+.comprar{
+    display: flex;
+    flex-direction: row; 
+}
+
+.link{
+    padding: 10px;
+}
+
+.linkinfo{
+    font-size: 0.9em;
+    color: rgb(59, 144, 255);
+    padding: 10px;
+    font-weight: 500;
+}
+
+.comprar a:hover{
+    text-decoration: underline;
+}
+
+.muchaimagen{
+    padding-top: 25px;
+}
+
+/*SECCION BLANCA AIFON */
+
+.grande-extragrande{
+    background-color: rgba(251,251,253,255);
+}
+
+.nuevo-aifon{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aifon14{
+    color: black;
+    font-size: 2em;
+    font-weight:bold;
+}
+
+.grande-extragrande{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 20%;
+    text-align: center;
+}
+
+
+.muchotexto2{
+
+    margin:0 auto;
+    padding-top: 3px; 
+
+    background: linear-gradient(90deg,rgb(54, 144, 160),rgb(182, 54, 161),rgb(184, 123, 67));
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+.muchotexto3{
+    margin:0 auto;
+    padding: 10px; 
+}
+
+.iphone-subtitle{
+    color: gray;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.comprar a{
+    text-decoration: none;
+}
+
+/* ay guachinango */
+
+.third{
+    padding-top:  10px;
+}
+
+.iWatch{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(251,251,253,255);
+}
+
+.guach{
+    padding-top: 3%;
+
+}
+
+.guach-title{
+
+    color: black;
+    font-size: 2em;
+    font-weight:bold;
+}
+
+.guach-title i{
+    color: black;
+    font-size: 1em;
+}
+
+.ultra{
+    padding:2px;
+}
+
+.ultra-naranja{
+    color:orange;
+    font-weight: 500;
+    text-align: center;
+}
+ 
+.iwatch-title{
+    font-size: 1.25em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.iwatch-subtitle{
+    color:grey;
+    font-weight: 400;
+    text-align: center;
+}
+
+.muchaimagen1 figure{
+    width: 100%;
+}
+
+.muchaimagen1 img{
+    width: 100%;
+}
+
+.foto img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* GRID SECTION */
+
+.grid{
+    width: 100%;
+    max-width:100%;
+    min-height: 100%; 
+    display: grid;
+
+    grid-template-areas:    "airpodspro watch8"
+                            "watchse fitnessplus"
+                            "educacion macair";
+
+    grid-template-columns: 50% 50%;                                              
+    gap: 10px;                     
+}
+
+.watch8-subtitle{
+    text-align: center;
+}
+
+.watch8-disponibilidad{
+    text-align: center;
+}
+
+.grid-airpodspro{
+    grid-area: airpodspro;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    min-height: 20%;
+    color: white;
+    justify-content: center;
+}
+
+
+.pods-title{
+    padding-top: 30px;
+    font-size: 1.4em;
+    font-weight:bold;
+
+}
+
+.pods-subtitle{
+    font-weight: 400;
+    text-align: center;
+}
+
+.pods-disponibilidad{
+    color:grey;
+    font-weight: 300;
+    text-align: center;
+}
+
+.aire img{
+    width: 100%;
+    object-fit:cover;
+}
+
+/* watch 8 */
+
+.grid-watch8{
+    
+    grid-area:watch8;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    min-height: 20%;
+    color: white;
+    justify-content: space-between;
+    
+}
+
+.watch8-title{
+    font-size: 1.4em;
+    font-weight:bold;
+    padding-top: 20px;
+}
+
+.watch8-title i{
+    font-size: 1em;
+}
+
+
+.series8{
+    color: rgb(199, 30, 0);
+    font-weight: 600;
+    font-size: 0.6em;
+}
+
+.watch8-subtitle{
+    font-weight: 400;
+}
+
+.watch8-disponibilidad{
+    color:grey;
+    font-weight: 300;
+}
+
+.muchaimagen-watch8{
+    padding-bottom: 0;
+}
+
+.app-guach img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-watchse{
+    grid-area: watchse;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(251,251,253,255);
+    width: 100%;
+    min-height: 20%;
+    color: black;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.watchse-title{
+    font-size: 1.4em;
+    font-weight:bold;
+}
+
+.watchse-title i{
+    color: black;
+    font-size: 1em;
+}
+
+.se{
+    color: rgb(199, 30, 0);
+    font-weight: 600;
+    font-size: 0.6em;
+}
+
+.watchse-subtitle{
+    font-weight: 400;
+    text-align: center;
+}
+
+.watchse-disponibilidad{
+    color:grey;
+    font-weight: 300;
+    text-align: center;
+}
+
+.muchaimagen-watchse{
+    padding-bottom: 0px;
+}
+
+.grid-fitnessplus{
+    grid-area: fitnessplus;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245,245,247,255);
+    width: 100%;
+    min-height: 20%;
+    color: black;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.fitnessplus-title{
+    font-size: 1.4em;
+    font-weight:bold;
+    color: black;
+    text-align: center;
+}
+
+.fitnessplus-title i{
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+
+.fitnessplus-subtitle{
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.fitnessplus-disponibilidad{
+    color:grey;
+    font-weight: 300;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.muchaimagen-fitplus{
+    padding-bottom: 0px;
+}
+
+.fitness-figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-educacion{
+    grid-area:educacion;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 20%;
+    justify-content: center;
+    
+}
+
+.fotoedu{
+    margin:0;
+}
+
+.fotoedu img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.grid-macbookair{
+    grid-area:macair;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(251,251,253,255);
+    width: 100%;
+    min-height: 20%;
+    color: black;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.mbair-title{
+    font-size: 1.8em;
+    font-weight:bold;
+    text-align: center;
+    
+}
+
+.mbair-subtitle{
+    font-weight: 400;
+    text-align: center;
+}
+
+.fotomb img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*  SLIDER */
+
+.fifth{
+    width: 60%;
+    margin:auto;
+    overflow: hidden;
+    height:20%;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    width:1300%;
+    justify-content: center;
+    animation: cambio 52s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider figure{
+    width:100%;
+    height: 100%;
+    
+}
+
+.slider img{
+    width:100%;
+    align-items: center;
+}
+
+@keyframes cambio{
+
+    0% {margin-left:0;}
+    7.6%{margin-left:0;}
+
+    8.7% {margin-left:-100%;}
+    15.2%{margin-left:-100%;}
+
+    15.3% {margin-left:-200%;}
+    22.8%{margin-left:-200%;}
+
+    23.9% {margin-left:-300%;}
+    30.4%{margin-left:-300%;}
+
+    31.5% {margin-left:-400%;}
+    38%{margin-left:-400%;}
+
+    39.1% {margin-left:-500%;}
+    45.6%{margin-left:-500%;}
+
+    46.7% {margin-left:-600%;}
+    53.2%{margin-left:-600%;}
+
+    54.8% {margin-left:-700%;}
+    60.8%{margin-left:-700%;}
+
+    61.9% {margin-left:-800%;}
+    68.4%{margin-left:-800%;}
+
+    69.5% {margin-left:-900%;}
+    76%{margin-left:-900%;}
+
+    77.1% {margin-left:-1000%;}
+    83.6%{margin-left:-1000%;}
+
+    84.7% {margin-left:-1100%;}
+    91.2%{margin-left:-1100%;}
+
+    92.3% {margin-left:-1200%;}
+    100% {margin-left:-1200%;}
+}
+
+/*  F O O T E R */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(245,245,247,255);
+    justify-content: center;
+}
+
+.letraschiquitas{
+    padding-top: 10px;
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom:30px;
+
+}
+
+.disclaimer{
+    font-weight: 200;
+    list-style: none;  
+}
+
+.disclaimer li{
+    font-size: 0.6em;
+    padding-bottom:20px;
+}
+
+.footer-links{
+    padding-top: 10px;
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom:30px;
+    justify-content: center;
+    
+    
+}
+
+.links-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+}
+
+.link-list{
+    padding-bottom: 10px;
+    
+}
+
+.desc-compr{
+    font-size: 0.6em;
+}
+
+.link-box ul{
+    list-style: none;
+    
+    
+}
+
+.link-list a{
+    text-decoration: none;
+    font-size: 0.6em;
+    color: black;
+
+}
+
+.link-list a:hover{
+    text-decoration: underline;
+}
+
+.footer-last{
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom:30px;
+    justify-content: center;
+}
+
+.footer-last footer-mas1{
+    justify-content: space-between;
+}
+
+.footer-mas{
+    font-size: 0.6em;
+    font-weight: 200;
+    color: grey;
+}
+
+.footer-mas a{
+    text-decoration: none; 
+    color: rgba(19,113,207,255);
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
+.footer-mas a:hover{
+    text-decoration: underline;
+}
+
+.footer-mas1{
+    font-size: 0.6em;
+    font-weight: 200;
+    color: grey;
+    
+}
+.footer-mas1 a{
+    text-decoration: none; 
+    font-size: 0.9em;
+    font-weight: 200;
+    color: grey;
+    
+}
+
+.footer-mas1 a:hover{
+    text-decoration: underline;
+}
